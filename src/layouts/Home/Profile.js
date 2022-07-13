@@ -1,6 +1,3 @@
-import profileImgLarge from 'assets/profile-large.jpg';
-import profileImgPlaceholder from 'assets/profile-placeholder.jpg';
-import profileImg from 'assets/profile.jpg';
 import { Button } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';
 import { Heading } from 'components/Heading';
@@ -61,16 +58,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
               </Button>
             </div>
             <div className={styles.column}>
-              <div className={styles.image}>
-                <Image
-                  reveal
-                  delay={100}
-                  placeholder={profileImgPlaceholder}
-                  srcSet={[profileImg, profileImgLarge]}
-                  sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                  alt="Yo"
-                />
-              </div>
+              <div className={styles.image}></div>
             </div>
           </div>
         )}

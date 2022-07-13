@@ -1,4 +1,3 @@
-import usesBackgroundPlaceholder from 'assets/uses-background-placeholder.jpg';
 import usesBackground from 'assets/uses-background.mp4';
 import { Footer } from 'components/Footer';
 import { Link } from 'components/Link';
@@ -26,11 +25,7 @@ export const Uses = () => {
         description="A list of hardware and software I use to do my thing"
       />
       <ProjectContainer className={styles.uses}>
-        <ProjectBackground
-          src={{ src: usesBackground }}
-          placeholder={usesBackgroundPlaceholder}
-          opacity={0.7}
-        />
+        <ProjectBackground src={{ src: usesBackground }} opacity={0.7} />
         <ProjectHeader
           title="Uses"
           description="A somewhat comprehensive list of tools, apps, hardware, and more that I use on a daily basis to design and code things. And yeah, that is a Johnny Mnemonic GIF in the background."
